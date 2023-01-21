@@ -1,6 +1,8 @@
-#header {font-size: 30; background-color: darkolivegreen; color: white; padding: 20px}
+#header {font-size: 30; background-color: rgb(107, 126, 75); color: white; padding: 30px}
 
-#hwHeader {font-size: 30; color: black; padding: 20px}
+.subhead {font-size: 30; color: rgb(0, 0, 0); padding: 30px; background-color: rgb(212, 157, 63);}
+
+.page {background-color: bisque;}
 
 .button {
     background-color: #1b1b1b; /* Green */
@@ -11,10 +13,10 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 0px 30px;
     cursor: pointer;
     }
 
-.a:link, a:visited, a:hover, a:active {color: white; font-size: 16px;}
+.a:link, a:visited, a:hover, a:active, a {color: white; font-size: 16px;}
 
-.p {font-size: 20px; font-weight: bold;}
+.p {font-size: 20px; font-weight: bold; padding: 30px;}
