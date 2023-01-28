@@ -20,3 +20,5 @@
 .a:link, a:visited, a:hover, a:active, a {color: white; font-size: 16px;}
 
 .p {font-size: 20px; font-weight: bold; padding: 30px;}
+
+.box {width: 300px; border: 2px; background-color: rgb(189, 103, 120); margin: 5px; color: whitesmoke;}

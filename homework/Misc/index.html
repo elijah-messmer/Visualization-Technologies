@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <script>
+            var num=10;
+            var name="ARTG";
+            console.log(num, name);
+            var num = num + 10;
+            console.log(num);
+            var name2 = " 5340"
+            console.log(name + name2)
+            var isBigger = num <= 100;
+            console.log(isBigger);
+            var i = 1;
+            i++;
+            console.log(i)
+            var users = ["Northeastern", 10, "ARTG", 230, "Test"]
+            console.log(users[1])
+            var newObject = {
+                name: "Hastings",
+                color: "Green",
+                street: "700 Huntington Ave",
+                zip: "02180",
+                greetings: function(name){
+                    console.log("Hey " + name + "!")
+                }
+            };
+            
+            console.log(newObject.greetings("Garfield"));
+            
+            var printHello = function(){
+                console.log("Hello, World!")
+            };
+            printHello();
+            var printName = function(name){
+                console.log("Hello" + name);
+            }
+            printName (" Garfield");
+            var addValues = function(val1, val2){
+                let sum = val1 + val2;
+                return sum;
+            }
+            var myResult = addValues(2, 22)
+            console.log(myResult)
+
+            var expValues = function(val){
+                let exp = val**2;
+                return exp;
+            }
+            var myExp = expValues(5)
+            console.log(myExp)
+
+            var myFunc = function(word1, word2){
+                console.log(word1 + " 24 " + word2)
+            }
+            var newSent = myFunc("I ate", "pizzas");
+            console.log(newSent)
+
+            var condVal = 12;
+            if(condVal <= 10){
+                console.log("This is not so bad")
+            } else if(condVal == 15) {
+                console.log("This is bad")
+            } else {
+                console.log("idk");
+            }
+            var greaterThanTen = function(val) {
+                if (val > 10) {
+                    console.log("Yes!");
+                } else if (val == 10){
+                    console.log("No!")
+                } else {
+                    val++;
+                    console.log(val);
+                };
+            };
+
+            var checker = greaterThanTen(15);
+            console.log(checker);
+
+            var inClass1 = function(num){
+                if (typeof(num) == 'number') {
+                 let square = Math.sqrt(num);
+                 return square;
+            } else {console.log("Not a Number")};
+        };
+        
+        var test1 = inClass1(25);
+        
+        console.log(test1);
+
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <h1 id="Hello">Hello, World!</h1>
+        </div>
+    </body>
+</html>

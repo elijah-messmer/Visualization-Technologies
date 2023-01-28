@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Homework 01-17</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+</head>
+<body class="page">
+    <h1 class="subhead">Random Movie/TV Show Recommendation</h1>
+    <button id="clickme1" class="button">Find a Movie</button>
+    <button id="clickme2" class="button">Find a TV show</button>
+        <h2 id="text1" class="box"></h2>
+        <h2 id="text2" class="box"></h2>
+    <script>
+        //Creating two arrays of movies and TV shows
+        var movArr = ["Parasite", "There Will Be Blood", "Whiplash", "Ladybird", "The Life Aquatic With Steve Zissou", "Everything Everywhere All At Once"];
+        var showArr = ["Fleabag", "The Great British Baking Show", "Jeopardy", "Breaking Bad", "The Haunting of Hill House"];
+    </script>
+    <script>
+        //Creating event handler for random movies
+        let mov_var = document.getElementById("clickme1");
+      
+        mov_var.addEventListener("click", () => {
+            document.getElementById("text1")
+                .innerHTML = movArr[Math.floor(Math.random() * movArr.length)];
+            });
+        
+        //Creating event handler for random TV shows
+        let show_var = document.getElementById("clickme2")
+
+        show_var.addEventListener("click", () => {
+            document.getElementById("text2")
+                .innerHTML = showArr[Math.floor(Math.random() * showArr.length)];
+            });
+    </script>
+    <button class="button"><a href="../../index.html">Return Home</a></button>
+</body>
+</html>
