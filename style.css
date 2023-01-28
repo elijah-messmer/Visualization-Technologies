@@ -19,6 +19,6 @@
 
 .a:link, a:visited, a:hover, a:active, a {color: white; font-size: 16px;}
 
-.p {font-size: 20px; font-weight: bold; padding: 30px;}
+.p {font-size: 20px !important; font-weight: bold !important; padding: 30px; color: black !important;}
 
 .box {width: 300px; border: 2px; background-color: rgb(189, 103, 120); margin: 5px; color: whitesmoke;}
