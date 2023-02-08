@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>01-31 Homework</title>
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+ <body class="page" style="text-align: center;">
+    <h1 class="subhead">01/31 Homework</h1>
+    <button class="button" style="text-align: left;"><a href="../../index.html">Return Home</a></button>
+    <p class="p">Checkout the code for this program in my:<a href="https://github.com/elijah-messmer/elijah-messmer.github.io/blob/main/homework/01-24/index.html" class="p">GitHub Repository!</a></p>
+ </body>
+
+<script>
+      fullData = [
+        {
+  	      name: "sun",
+          index: 0,
+          points: [[600,650],[450,300],[300,200], [250,300], [100,650]]
+        },
+        {
+          name: "moon",
+          index: 0,
+          points: [[100,650],[250,300],[325,200], [450,300], [600,650]]
+        }
+        ]
+
+        var svg = d3.select("body")
+	.append("svg")
+    .attr("width", 700)
+    .attr("height", 700)
+
+var circle = svg.selectAll("circle")
+  .data(fullData)
+  .enter()
+  .append("circle")
+    .attr("r", 40)
+    .style("fill", function(d) {
+                        if (d.name == "sun") {
+                            return "yellow";
+                    }
+                        else if (d.name == "moon") {
+                            return "grey";
+                        }
+                    })
+
+circle
+    .transition()
+    .duration(1000)
+    .delay(100)
+    .on("start", function repeat() {
+        d3.active(this)
+          .transition()
+          .attr('cx', d=>d.points[d.index][0])
+          .attr('cy', d=>d.points[d.index][1])
+          .transition()
+            .on("start", repeat);
+            
+        d3.select(this).data()[0].index++
+      });
+
+</script>
+</html>
