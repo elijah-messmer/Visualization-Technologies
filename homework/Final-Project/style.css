@@ -1,0 +1,15 @@
+#viz {
+    position: relative
+}
+
+p {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    font-size: large;
+}
+
+ul {
+    padding-left: 6rem;
+    padding-right: 5rem;
+    font-size: large;
+}

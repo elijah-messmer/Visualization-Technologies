@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>The Happiness Hierarchy</title>
+    <meta name="description" content="An analysis of the Somerville Happiness Survey" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<body class="page">
+    <header>
+        <h1 class="subhead" style="text-align: center;">
+            The Happiness Hierarchy
+        </h1>
+    </header>
+	<main>
+        <p>
+            I discoverd the Somerville Happiness Survey last semester and have wanted to use it in a project since then. Using this dataset, my project will answer two central questions: (1) what is the happiest combination of factors? And (2), what are the three most influential factors when it comes to happiness, or a lack thereof?
+        </p>
+        <p>
+            The first question can create something of a happiness formula, allowing us to see what factors, on average, create the highest levels of happiness across survey respondents. The second question will allow us to focus in on the factors that have the strongest explanatory ability when it comes to determining happiness levels. This second question is also useful because it will allow me to see what factors are most correlated to a decrease in happiness. This could be particularly interesting if these factors are related to demographic characteristics such as race, income, or gender.
+        </p>
+        <p>
+            The rough steps necessary to complete this project can be broken into three parts:
+        </p>
+        <ul>
+            <li>
+                Analyzing the data
+            </li>
+            <li>
+                Visualizing the data in d3
+            </li>
+            <li>
+                Integrating visualized data into scrollama
+            </li>
+        </ul>
+        <p>
+            A couple of aspirational goals beyond this main component include (1) creating an exploratory, interactive tool for the user to look at the full dataset and (2) creating a customized quiz and recommendation of what lifestyle changes would be most helpful in improving the user's happiness.
+        </p>
+        <div style="width: 100%; height: 100%; position: absolute;">
+        <svg id="viz">
+            <rect id="placeholder" x="0" y="0" fill=none stroke="rgb(189, 103, 120)" stroke-width="10px" />
+        </svg>
+        </div>
+	</main>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+</body>
+
+</html>
