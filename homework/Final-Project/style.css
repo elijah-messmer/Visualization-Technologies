@@ -34,6 +34,10 @@ ul {
     width: 100%;
     margin: 0;
     background-color: #8a8a8a;
+    background-image: url(media/Somerville.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
     z-index: 0;
     top: 12.5vh;
     height: 75vh;
@@ -46,7 +50,7 @@ ul {
   .sticky-thing p {
     font-size: 8rem;
     font-weight: 900;
-    color: #fff;
+    color: #0f0f0f;
   }
 
   .step {
