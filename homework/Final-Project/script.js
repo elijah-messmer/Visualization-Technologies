@@ -1,13 +1,41 @@
-const width = window.innerWidth, height = window.innerHeight;
+var main = document.querySelector("main");
+var scrolly = main.querySelector("#scrolly");
+var sticky = scrolly.querySelector(".sticky-thing");
+var article = scrolly.querySelector("article");
+var steps = article.querySelectorAll(".step");
 
+// initialize the scrollama
+var scroller = scrollama();
 
-const svg = d3.select("#viz")
-            .attr("width", width)
-            .attr("height", height);
+// scrollama event handlers
+function handleStepEnter(response) {
+  // response = { element, direction, index }
+  var el = response.element;
 
-const map = svg.select("#map");
+  // remove is-active from all steps
+  // then add is-active to this step
+  steps.forEach(step => step.classList.remove('is-active'));
+  el.classList.add('is-active');
 
+  // update graphic based on step
+  sticky.querySelector("p").innerText = el.dataset.step;
+}
 
-d3.select("#placeholder")
-  .attr("width", width)
-  .attr("height", height);
+function init() {
+  // 2. setup the scroller passing options
+  // 		this will also initialize trigger observations
+  // 3. bind scrollama event handlers (this can be chained like below)
+  scroller
+    .setup({
+      step: "#scrolly article .step",
+      offset: 0.33,
+      debug: true
+    })
+    .onStepEnter(handleStepEnter);
+
+  // setup resize event
+  window.addEventListener("resize", scroller.resize);
+}
+
+// kick things off
+init();
