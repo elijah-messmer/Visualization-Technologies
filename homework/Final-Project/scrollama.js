@@ -22,9 +22,6 @@ function handleStepEnter(response) {
 }
 
 function init() {
-  // 2. setup the scroller passing options
-  // 		this will also initialize trigger observations
-  // 3. bind scrollama event handlers (this can be chained like below)
   scroller
     .setup({
       step: "#scrolly article .step",
