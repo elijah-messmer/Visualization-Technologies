@@ -23,18 +23,30 @@ body {
     background-color: var(--background);
     font-family: var(--font-family-body);
     font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: var(--color-text);
+    color: #1e579ca2;
 }
 
-p {
-    font-size: 18px;
+a, a:hover{
+  color: var(--color-text);
 }
 
 
 input[type="checkbox"] {
   display: none;
+}
+
+.firstCharacter {
+  float: left;
+  font-size: 55px;
+  line-height: 40px;
+  padding-top: 8px;
+  padding-right: 8px;
+}
+
+footer {
+  border-top: #242424 1px solid;
 }
 
 label {
@@ -43,7 +55,6 @@ label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
-  font-family: "Indie Flower", cursive;
   font-family: adobe-handwriting-frank, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -60,7 +71,7 @@ label:before {
   width: 20px;
   height: 20px;
   border: 2px solid #999;
-  background: #fff url("path/to/rough/texture.png") repeat;
+  background: #fff;
   box-sizing: border-box;
   border-radius: 4px;
   transition: all 0.2s ease;
@@ -83,6 +94,41 @@ label:hover:before {
 #option3[type="checkbox"]:checked + label:before {
   background: #e78ac3;
   border-color: #e78ac3;
+}
+
+#option4[type="checkbox"]:checked + label:before {
+  background: #f1a340;
+  border-color: #f1a340;
+}
+
+#option5[type="checkbox"]:checked + label:before {
+  background: #bebada;
+  border-color: #bebada;
+}
+
+#option6[type="checkbox"]:checked + label:before {
+  background: #b3de69;
+  border-color: #b3de69;
+}
+
+#option7[type="checkbox"]:checked + label:before {
+  background: #fb8072;
+  border-color: #fb8072;
+}
+
+#option8[type="checkbox"]:checked + label:before {
+  background: #80b1d3;
+  border-color: #80b1d3;
+}
+
+#option9[type="checkbox"]:checked + label:before {
+  background: #fdb462;
+  border-color: #fdb462;
+}
+
+#option10[type="checkbox"]:checked + label:before {
+  background: #b3b3b3;
+  border-color: #b3b3b3;
 }
 
 
@@ -157,7 +203,7 @@ input[type="checkbox"]:checked + label:after {
 article {
   position: relative;
   padding: 0 1rem;
-  max-width: 20rem;
+  max-width: 25rem;
 }
 
 .sticky-thing {
@@ -177,15 +223,15 @@ article {
 
 .sticky-thing p {
   padding: 1rem;
-  font-size: 8rem;
+  font-size: 18px;
   font-weight: 900;
   color: #fff;
 }
 
 .step {
   margin: 0 auto 2rem auto;
-  margin-bottom: 15rem;
-  background-color: #F0ECCFd4;
+  margin-bottom: 25rem;
+  background-color: #fbc35225;
   color: var(--color-text);
   border-radius: 10px;
 }
@@ -200,7 +246,9 @@ article {
 }
 
 .step p {
-  text-align: center;
+  text-align: left;
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 1.5;
   padding: 1rem;
-  font-size: 1.5rem;
 }
