@@ -11,4 +11,4 @@ This project was created as a final project in Visualization Technologies I at N
 * [Scrollama](https://github.com/russellsamora/scrollama)
 * [Bootstrap](http://getbootstrap.com/)
 
-Special thanks to Professor Alexandros Haridis for his guidance and support throughout the project. Read my longer write-up of the project [here](media\Visualization-Technologies-Final-Project-Writeup.pdf).
+Special thanks to Professor Alexandros Haridis for his guidance and support throughout the project. Read my longer write-up of the project [here](media/Visualization-Technologies-Final-Project-Writeup.pdf).
